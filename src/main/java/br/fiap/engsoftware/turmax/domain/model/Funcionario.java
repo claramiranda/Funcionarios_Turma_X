@@ -12,6 +12,10 @@ public class Funcionario {
     }
 
 
+    @Override
+    public String toString() {
+        return "nome: " + getNome() + "\nidade: " + getIdade() + "\nsalario: " + getSalario() + "\ntipo: " + getClass() + "\n";
+    }
 
     //CONSTRUCTOR
     public Funcionario(String nome, int idade, double salario) {
@@ -54,5 +58,7 @@ public class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+
 
 }

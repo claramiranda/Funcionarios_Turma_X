@@ -15,5 +15,19 @@ public class Main {
         integral.calcularSalario();
 
 
+        Funcionario[] funcionarios = new Funcionario[3];
+
+        funcionarios[0] = gerente;
+        funcionarios[1] = porHora;
+        funcionarios[2] = integral;
+
+        for (Funcionario funcionario: funcionarios){
+            if(funcionario != null){
+                System.out.println(funcionario);
+                   if (funcionario.getClass() == Gerente.class){
+                    System.out.println("é um gerente ");
+                }
+            }
+        }
     }
 }

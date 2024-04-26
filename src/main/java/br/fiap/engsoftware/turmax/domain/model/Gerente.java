@@ -11,9 +11,14 @@ public class Gerente extends Funcionario {
         this.bonusDeDesempenho = bonusDeDesempenho;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "salarioBase: " + this.salarioBase + "\nBonus: " + this.bonusDeDesempenho + "\n" ;
+    }
 
     @Override
     public void calcularSalario() {
         setSalario(salarioBase + bonusDeDesempenho);
     }
+
 }
