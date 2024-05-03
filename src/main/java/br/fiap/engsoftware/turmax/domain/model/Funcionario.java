@@ -1,5 +1,8 @@
 package br.fiap.engsoftware.turmax.domain.model;
 
+/**
+ * Classe para abstrair o conceito de um Funcionário básico.
+ */
 public class Funcionario {
 
     private String nome;
@@ -7,6 +10,15 @@ public class Funcionario {
     private double salario;
 
 
+    // Comentário de uma linha
+    /*
+        Comentário em Bloco
+     */
+
+
+    /**
+     * Método a ser sobreescrito nas classes filhas com lógica para cálculo de salário bruto
+     */
     public void calcularSalario(){
         System.out.println("Método para calcular o salário");
     }
@@ -35,6 +47,7 @@ public class Funcionario {
         return this.nome;
     }
 
+    //FIXME Validar se a String contém apenas números
     public void setNome(String nome) {
         if (nome == null) {
             System.out.println("nome vazio =( ");

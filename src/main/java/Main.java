@@ -15,12 +15,16 @@ public class Main {
         integral.calcularSalario();
 
 
+        gerente.verificarFerias(true, "teste");
+
         Funcionario[] funcionarios = new Funcionario[3];
 
         funcionarios[0] = gerente;
         funcionarios[1] = porHora;
         funcionarios[2] = integral;
 
+
+        //TODO Desenvolver validação para demais tipos de Funcionários
         for (Funcionario funcionario: funcionarios){
             if(funcionario != null){
                 System.out.println(funcionario);
